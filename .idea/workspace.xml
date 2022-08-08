@@ -2,185 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d4a7064c-93f9-48a8-80c4-80f7043d9901" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php-mvc-base.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/COMMITMENT" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/VERSION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/get_oauth_token.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-af.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-az.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ba.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-be.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-bg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ca.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-cs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-da.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-de.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-el.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-eo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-es.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-et.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-fa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-fi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-fo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-fr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-gl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-he.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-hi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-hr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-hu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-hy.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-id.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-it.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ja.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ka.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ko.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-lt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-lv.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-mg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-nb.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-nl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-pl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-pt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-pt_br.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-ru.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-sk.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-sl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-sr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-sr_latn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-sv.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-tl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-tr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-uk.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-vi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-zh.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/language/phpmailer.lang-zh_cn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/src/Exception.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/src/OAuth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/src/PHPMailer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/src/POP3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/PHPMailer/src/SMTP.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/mail/mailer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/src/Bridge.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/src/controllers/api_uc002Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/src/core/App.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/src/core/ConnectDB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/src/core/Controllers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/api-quanlynhanvien-uc2/src/models/ot_requestModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-be/checkInCheckOutAPI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-be/documentAPI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/python-be/timeSheetAPI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/config/dbconnect.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/OT_request.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/give_feedback.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/leave_manage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/login.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/loginThao.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/myFb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/myLeave.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/myPAgoal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/navbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/provi_feedback.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/css/sel_as_n_goal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/icon/arrow_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/icon/calendar-icon-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/icon/heading_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/icon/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/icon/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/achieve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/avatar-fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/nofound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/oh crap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/overdue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/run_deadline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/img/image/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/leave_manage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/login.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/myFb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/myPAgoal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/provi_fb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/uc002/create_request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/uc002/model.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/uc002/ot_request.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/js/uc010/leave_manage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/public/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/OT_request.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/OT_request2.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/PA_manage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/OT_request.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/give_feedback.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/leave_manage.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/myFb.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/myLeave.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/myPAgoal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/navbar.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/provi_feedback.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/css/sel_as_n_goal.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/icon/arrow_down.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/icon/calendar-icon-removebg-preview.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/icon/heading_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/icon/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/icon/search-icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/achieve.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/avatar-fb.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/nofound.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/oh crap.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/overdue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/run_deadline.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/img/image/user.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/js/leave_manage.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/js/myFb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/js/myPAgoal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/asset/js/provi_fb.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/export_pdf_page.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/giveFb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/giveFb_achieve.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/leave_manage.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/myFb.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/myLeave.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/myPAgoal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/provi_feedback.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/self_assess_n_goal.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/self_assessment.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/self_result.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/source/font end/unsubmit.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/Bridge.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/controllers/api_authController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/controllers/homeController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/controllers/uc002Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/controllers/uc010Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/core/App.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/core/ConnectDB.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/core/Controllers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/models/authModel.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/UC002/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/UC002/modal.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/UC010/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/UC010/modal.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/main/leave_manage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/main/main.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/content/main/pa_manage.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/template/home.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/quan-ly-nhan-vien/src/views/template/main.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/myLeave.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/myLeave.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/uc010/leave_manage.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/uc010/leave_manage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controllers/uc010Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/uc010Controller.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/ConnectDB.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/ConnectDB.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/Controllers.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/Controllers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/content/UC010/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/content/UC010/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/content/UC010/modal.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/content/UC010/modal.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../hotdeal" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -215,10 +44,17 @@
       <option name="presentableId" value="Default" />
       <updated>1659892210482</updated>
       <workItem from="1659892211816" duration="241000" />
+      <workItem from="1659924692070" duration="19271000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1659949255373">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1659949255373" />
   </component>
 </project>

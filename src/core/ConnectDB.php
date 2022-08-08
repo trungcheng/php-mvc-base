@@ -3,7 +3,8 @@
         protected $connection;
         private $hostname = 'localhost';
         private $user = 'root';
-        private $password = '';
+//        private $password = '';
+        private $password = 'laragon';
         private $nameDB = 'main_service';
         
         // kết nối với DB
