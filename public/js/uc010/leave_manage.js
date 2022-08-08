@@ -236,10 +236,7 @@ function delete_leave_request(id, status) {
 function delete_an_request_leave() {
     $.ajax({
         type: "DELETE",
-        url: `${api_uc010}/delete-a-request`,
-        data: {
-            rleave_id: leave_history_id
-        },
+        url: `${api_uc010}/delete-a-request?rleave_id=${leave_history_id}`,
         success: function (response) {
             if (response.success) {
                 showDelConfirm();
@@ -274,4 +271,8 @@ $('#form-leave-history').on('submit', function (e) {
 
     update_page(formData);
     get_leave_histories();
+});
+
+$('.js-delete-confirm').on('click', function () {
+    delete_an_request_leave();
 });

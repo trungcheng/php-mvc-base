@@ -20,7 +20,7 @@
         </div>
         <div class="modal-content">
             <p>do you want to delete this leave history? This step cannot be undo</p>
-            <a href="#" class="btn js-confirm">OK</a>
+            <a href="#" class="btn js-delete-confirm">OK</a>
             <a href="#" class="btn js-modal-close-del-re">cancel</a>
         </div>
     </div>
