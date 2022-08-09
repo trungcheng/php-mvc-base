@@ -54,6 +54,7 @@ function showLeaveManagement() {
     btn1.classList.add('open');
     btn2.classList.remove('open');
     summary.classList.remove('open');
+    get_leave_histories();
 }
 
 function showSummary() {
@@ -64,6 +65,7 @@ function showSummary() {
     document.getElementById('btn-leave').style.color = "var(--black)";
     leave_his.classList.remove('open');
     leave_his.classList.toggle("hidden");
+    get_data_summaries();
 }
 
 // Js for Delete request
@@ -208,14 +210,14 @@ function generate_data(data = []) {
         <tr>
             <td>${data[i].EMPLOYEE_ID}</td>
             <td>${leave_types[data[i].LEAVE_TYPE]}</td>
-            <td>${data[i].LEAVE_FROM}</td>
-            <td>${data[i].LEAVE_TO}</td>
+            <td>${formatDate(data[i].LEAVE_FROM)}</td>
+            <td>${formatDate(data[i].LEAVE_TO)}</td>
             <td class="${data[i].STATUS}">${data[i].STATUS}</td>
-            <td>${data[i].CREATE_DATE}</td>
+            <td>${formatDate(data[i].CREATE_DATE)}</td>
             <td>${data[i].MANAGER_ID}</td>
             <td>${data[i].MANAGER_COMMENT || ''}</td>
             <td class="action-area">
-                <i onclick="delete_leave_request('${data[i].EMPLOYEE_ID}', '${data[i].STATUS}')" class="fa-solid fa-trash-can js-trash js-del-re"></i>
+                <i onclick="delete_leave_request('${data[i].RLEAVE_ID}', '${data[i].STATUS}')" class="fa-solid fa-trash-can js-trash js-del-re"></i>
             </td>
         </tr>
         `;
@@ -241,7 +243,27 @@ function delete_an_request_leave() {
             if (response.success) {
                 showDelConfirm();
                 get_leave_histories();
+                update_leave_history(response.data);
             }
+        },
+        error: function (e) {
+            console.log(e);
+        }
+    });
+}
+
+function update_leave_history(data) {
+    $.ajax({
+        type: 'POST',
+        url: api_uc010_update_history,
+        data: {
+            employee_id: data[1],
+            leave_typeid: data[4],
+            create_date: formatDate(data[8], 'Y'),
+            number_days: data[3],
+        },
+        success: function (response) {
+            console.log(response);
         },
         error: function (e) {
             console.log(e);
@@ -279,3 +301,54 @@ $('#form-leave-history').on('submit', function (e) {
 $('.js-delete-confirm').on('click', function () {
     delete_an_request_leave();
 });
+
+// Js for summary
+function get_data_summaries() {
+    $.ajax({
+        type: 'GET',
+        url: api_uc010_summary,
+        dataType: 'json',
+        success: function (response) {
+            console.log(response);
+            // if (response.success && response.data.length) {
+            //     generate_data(response.data);
+            // } else {
+            //     root.innerHTML = `
+            //         <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
+            //         <p>you don't have any leave request.</p>
+            //     `;
+            // }
+        },
+        error: function () {
+            // root.innerHTML = `
+            //     <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
+            //     <p>you don't have any leave request.</p>
+            // `;
+        }
+    });
+}
+
+// JS for common
+function formatDate(date, type = 'dmY') {
+    var d = new Date(date), month = '', day = '', year = '';
+
+    month = (d.getMonth() + 1).toString();
+    day = d.getDate().toString();
+    year = d.getFullYear();
+
+    if (type == 'dmY') {
+        if (month.length < 2) {
+            month = '0' + month;
+        }
+
+        if (day.length < 2) {
+            day = '0' + day;
+        }
+
+        return [day, month, year].join('/');
+    } else if (type == 'Y') {
+        return year;
+    } else if (type == 'mY') {
+        return [month, year].join('/');
+    }
+}

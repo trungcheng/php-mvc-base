@@ -154,6 +154,8 @@
     const id_user   = <?= $_SESSION["id"] ?>;
     const api_uc010 = "<?= $api_uc010 ?>";
     const host_name = "<?= $host_name ?>";
+    const api_uc010_summary = "<?= $api_uc010_summary ?>";
+    const api_uc010_update_history = "<?= $api_uc010_update_history ?>";
 </script>
 
 <script src="<?= $host_name ?>/public/js/uc010/leave_manage.js"></script>
