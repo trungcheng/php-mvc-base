@@ -149,10 +149,10 @@ function update_page(formData) {
     url_get_leave_request = api_uc010 + `/get-leave-requests?employee_id=${id_user}&leave_from=${formData.leave_from}&leave_to=${formData.leave_to}&leave_type=${formData.leave_type}&status=${formData.leave_status}&limit=${per_page}&page=${page - 1}`;
 }
 
-function next_page(type) {
-    if (type == "up") {
+function next_back_page(type) {
+    if (type == "next") {
         var action = 1;
-    } else if (type == "down") {
+    } else if (type == "back") {
         var action = -1;
     }
 
@@ -182,11 +182,11 @@ function generate_data(data = []) {
         <div class="header">
             <h4>history</h4>
             <div class="header-page">
-                <i onclick="next_page('down')" class="fa-solid fa-angle-left" style="cursor: pointer;"></i>
+                <i onclick="next_back_page('back')" class="fa-solid fa-angle-left" style="cursor: pointer;"></i>
                 <span id="current_page" style="padding:0 5px;">1</span>
                 <span> / </span>
                 <span id="all_page" style="padding:0 5px;">1</span>
-                <i onclick="next_page('up')" class="fa-solid fa-angle-right" style="cursor: pointer;"></i>
+                <i onclick="next_back_page('next')" class="fa-solid fa-angle-right" style="cursor: pointer;"></i>
             </div>
         </div>
         <table style="background-color: white" id="history">
