@@ -215,7 +215,7 @@ function generate_data(data = []) {
             <td>${data[i].MANAGER_ID}</td>
             <td>${data[i].MANAGER_COMMENT || ''}</td>
             <td class="action-area">
-                <i onclick="delete_leave_request('${data[i].id}', '${data[i].STATUS}')" class="fa-solid fa-trash-can js-trash js-del-re"></i>
+                <i onclick="delete_leave_request('${data[i].EMPLOYEE_ID}', '${data[i].STATUS}')" class="fa-solid fa-trash-can js-trash js-del-re"></i>
             </td>
         </tr>
         `;
@@ -242,6 +242,9 @@ function delete_an_request_leave() {
                 showDelConfirm();
                 get_leave_histories();
             }
+        },
+        error: function (e) {
+            console.log(e);
         }
     });
 }
