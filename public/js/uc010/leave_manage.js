@@ -245,8 +245,8 @@ function generate_data_summary(data = []) {
         <tr>
             <td>${leave_types_data[i][1]}</td>
             <td>${parseInt(leave_types_data[i][2])}</td>
-            <td>${leave_type_histories_data[leave_types_data[i][0]] ? parseInt(leave_type_histories_data[leave_types_data[i][0]][2]) : ''}</td>
-            <td>${leave_type_histories_data[leave_types_data[i][0]] ? parseInt(leave_types_data[i][2]) - parseInt(leave_type_histories_data[leave_types_data[i][0]][2]) : ''}</td>
+            <td>${leave_type_histories_data[leave_types_data[i][0]] ? parseInt(leave_type_histories_data[leave_types_data[i][0]][2]) : 0}</td>
+            <td>${leave_type_histories_data[leave_types_data[i][0]] ? parseInt(leave_types_data[i][2]) - parseInt(leave_type_histories_data[leave_types_data[i][0]][2]) : parseInt(leave_types_data[i][2])}</td>
         </tr>
         `;
     }
