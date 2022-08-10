@@ -368,19 +368,19 @@ function formatDate(date, type = 'dmY') {
     day = d.getDate().toString();
     year = d.getFullYear();
 
+    if (month.length < 2) {
+        month = '0' + month;
+    }
+
+    if (day.length < 2) {
+        day = '0' + day;
+    }
+
     if (type == 'dmY') {
-        if (month.length < 2) {
-            month = '0' + month;
-        }
-
-        if (day.length < 2) {
-            day = '0' + day;
-        }
-
         return [day, month, year].join('/');
-    } else if (type == 'Y') {
-        return year;
     } else if (type == 'mY') {
         return [month, year].join('/');
+    } else if (type == 'Y') {
+        return year;
     }
 }

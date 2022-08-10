@@ -29,16 +29,16 @@
                     <div class="leave-type">
                         <p>leave type</p>
                         <select id="leave-type" name="leave_type">
-                            <option value="0">all new types</option>
-                            <option value="1">annual leave</option>
-                            <option value="2">personal leave</option>
-                            <option value="3">compensation leave</option>
-                            <option value="4">sick leave (non-paid)</option>
-                            <option value="5">non-paid leave</option>
-                            <option value="6">maternity leave (non-paid)</option>
-                            <option value="7">engagement ceremony</option>
-                            <option value="8">wedding leave</option>
-                            <option value="9">relative funeral leave</option>
+                            <option value="0">All New Types</option>
+                            <option value="1">Annual Leave</option>
+                            <option value="2">Personal Leave</option>
+                            <option value="3">Compensation Leave</option>
+                            <option value="4">Sick Leave (Non-paid)</option>
+                            <option value="5">Non-paid Leave</option>
+                            <option value="6">Maternity Leave (Non-paid)</option>
+                            <option value="7">Engagement Ceremony</option>
+                            <option value="8">Wedding Leave</option>
+                            <option value="9">Relative Funeral Leave</option>
                         </select>
                     </div>
                 </div>
@@ -46,8 +46,8 @@
                 <div class="show-leave-status">
                     <p>show leave with status</p>
                     <div class="squarecheck">
-                        <label for="squarecheck2">accepted</label>
-                        <input type="checkbox" name="leave_status" value="Accepted" id="squarecheck2">
+                        <label for="squarecheck2">approved</label>
+                        <input type="checkbox" name="leave_status" value="Approved" id="squarecheck2">
                     </div>
                     <div class="squarecheck">
                         <label for="squarecheck3">rejected</label>
@@ -58,7 +58,7 @@
                         <input type="checkbox" name="leave_status" value="Cancelled" id="squarecheck4">
                     </div>
                     <div class="squarecheck">
-                        <label for="squarecheck5">pending approval</label>
+                        <label for="squarecheck5">pending</label>
                         <input type="checkbox" name="leave_status" value="Pending" id="squarecheck5">
                     </div>
                     <div class="squarecheck">
