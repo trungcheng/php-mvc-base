@@ -73,75 +73,21 @@
                 </div>
             </form>
 
-            <div id="root"></div>
+            <div id="root-leave-history"></div>
         </div>
     </div>
 
     <div class="content-body summary">
         <div class="js-modal-contain">
-            <select name="year" id="year">
+            <select name="year" id="year" onchange="onChangeYear(this);">
                 <option value="2022">by 2022</option>
                 <option value="2023">by 2023</option>
                 <option value="2024">by 2024</option>
                 <option value="2025">by 2025</option>
                 <option value="2026">by 2026</option>
             </select>
-            <table>
-                <tr>
-                    <th>leave type</th>
-                    <th>total day(s)</th>
-                    <th>token day(s)</th>
-                    <th>remaining days</th>
-                </tr>
-                <tr>
-                    <td>annual leave</td>
-                    <td>16</td>
-                    <td>2</td>
-                    <td>14</td>
-                </tr>
-                <tr>
-                    <td>personal leave</td>
-                    <td>6</td>
-                    <td>1</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>sick leave (Non-paid)</td>
-                    <td>30</td>
-                    <td>0</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>non-paid leave</td>
-                    <td>30</td>
-                    <td>0</td>
-                    <td>30</td>
-                </tr>
-                <tr>
-                    <td>maternity leave (Non-paid)</td>
-                    <td>0</td>
-                    <td>0</td>
-                    <td>0</td>
-                </tr>
-                <tr>
-                    <td>engagement ceremony</td>
-                    <td>1</td>
-                    <td>0</td>
-                    <td>1</td>
-                </tr>
-                <tr>
-                    <td>relative funeral leave</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>3</td>
-                </tr>
-                <tr>
-                    <td>wedding leave</td>
-                    <td>3</td>
-                    <td>0</td>
-                    <td>3</td>
-                </tr>
-            </table>
+
+            <div id="root-summary"></div>
         </div>
     </div>
 </div>

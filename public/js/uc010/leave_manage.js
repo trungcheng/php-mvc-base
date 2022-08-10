@@ -23,7 +23,8 @@ var formData = {
     leave_status: [],
 }
 
-const root = document.getElementById('root');
+const root_leave_history = document.getElementById('root-leave-history');
+const root_summary = document.getElementById('root-summary');
 const leave_his = document.querySelector('.leave-history');
 const summary = document.querySelector('.summary');
 const js_leaves = document.querySelectorAll('.js-leave-his');
@@ -132,14 +133,14 @@ function get_leave_histories() {
             if (response.success && response.data.length) {
                 generate_data(response.data);
             } else {
-                root.innerHTML = `
+                root_leave_history.innerHTML = `
                     <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
                     <p>you don't have any leave request.</p>
                 `;
             }
         },
         error: function () {
-            root.innerHTML = `
+            root_leave_history.innerHTML = `
                 <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
                 <p>you don't have any leave request.</p>
             `;
@@ -179,7 +180,7 @@ function edit_number_total_page(page_count) {
 }
 
 function generate_data(data = []) {
-    root.innerHTML = `
+    root_leave_history.innerHTML = `
     <div class="history">
         <div class="header">
             <h4>history</h4>
@@ -224,6 +225,31 @@ function generate_data(data = []) {
     }
 
     edit_number_total_page(data_leave_histories.total);
+}
+
+function generate_data_summary(data = []) {
+    var leave_types_data = data.leave_types;
+    var leave_type_histories_data = data.leave_type_histories;
+
+    root_summary.innerHTML = `
+    <table id="summary">
+        <tr>
+            <th>Leave Type</th>
+            <th>Total Day(S)</th>
+            <th>Used Day(S)</th>
+            <th>Remaining Days</th>
+        </tr>
+    </table>`;
+    for (var i = 0; i < leave_types_data.length; i++) {
+        document.getElementById('summary').innerHTML += `
+        <tr>
+            <td>${leave_types_data[i][1]}</td>
+            <td>${parseInt(leave_types_data[i][2])}</td>
+            <td>${leave_type_histories_data[leave_types_data[i][0]] ? parseInt(leave_type_histories_data[leave_types_data[i][0]][2]) : ''}</td>
+            <td>${leave_type_histories_data[leave_types_data[i][0]] ? parseInt(leave_types_data[i][2]) - parseInt(leave_type_histories_data[leave_types_data[i][0]][2]) : ''}</td>
+        </tr>
+        `;
+    }
 }
 
 function delete_leave_request(id, status) {
@@ -303,29 +329,35 @@ $('.js-delete-confirm').on('click', function () {
 });
 
 // Js for summary
-function get_data_summaries() {
+function get_data_summaries(year = '2022') {
     $.ajax({
-        type: 'GET',
+        type: 'POST',
         url: api_uc010_summary,
-        dataType: 'json',
+        data: {
+            year: year
+        },
         success: function (response) {
             console.log(response);
-            // if (response.success && response.data.length) {
-            //     generate_data(response.data);
-            // } else {
-            //     root.innerHTML = `
-            //         <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
-            //         <p>you don't have any leave request.</p>
-            //     `;
-            // }
+            if (response.success && response.data.leave_types.length) {
+                generate_data_summary(response.data);
+            } else {
+                root_summary.innerHTML = `
+                    <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
+                    <p>you don't have any leave request.</p>
+                `;
+            }
         },
         error: function () {
-            // root.innerHTML = `
-            //     <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
-            //     <p>you don't have any leave request.</p>
-            // `;
+            root_summary.innerHTML = `
+                <img src="${host_name}/public/img/image/oh crap.png" width="420" height="300" alt="">
+                <p>you don't have any leave request.</p>
+            `;
         }
     });
+}
+
+function onChangeYear(ev) {
+    get_data_summaries($(ev).val());
 }
 
 // JS for common

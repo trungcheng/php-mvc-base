@@ -17,14 +17,15 @@ class uc010Controller extends Controllers
 
     public function update_leave_history()
     {
+        $this->middleware();
+        $model = $this->model('leaveModel');
+
         $postData = [
             'employee_id' => $_POST["employee_id"],
             'leave_typeid' => $_POST["leave_typeid"],
             'create_date' => $_POST["create_date"],
             'number_days' => $_POST["number_days"],
         ];
-
-        $model = $this->model('leaveModel');
 
         $leaveHistory = $model->get_leave_history($postData);
         if (!empty($leaveHistory)) {
@@ -33,27 +34,36 @@ class uc010Controller extends Controllers
 
             $response = $model->update_leave_history($postData);
             if ($response) {
-                echo $this->response_data(200, "Update leave type history success", [], true);
-                exit();
+                return $this->response_data(200, "Update leave type history success", [], true);
             }
 
-            echo $this->response_data(500, "System has error", [], false);
-            exit();
+            return $this->response_data(500, "Invalid data", [], false);
         }
 
-        echo $this->response_data(404, "Leave history not found", [], false);
+        return $this->response_data(404, "Leave history not found", [], false);
     }
 
     public function get_data_summaries()
     {
+        $this->middleware();
         $model = $this->model('leaveModel');
 
-        $userId = $_SESSION['id'];
-        $year = '2022';
-        $data = $model->get_data_summaries($userId, $year);
-        var_dump($data);die;
+        $userId = isset($_SESSION['id']) ? $_SESSION['id'] : null;
+        $year = isset($_POST['year']) ? $_POST['year'] : '';
 
-        echo $this->response_data(200, "Get all leave types success", $data, true);
+        if (!empty($userId) && !empty($year)) {
+            $leaveTypes = $model->get_all_leave_types();
+            $leave_type_histories = $model->get_leave_type_histories($userId, $year);
+
+            $data = [
+                'leave_types' => $leaveTypes,
+                'leave_type_histories' => $leave_type_histories
+            ];
+
+            return $this->response_data(200, "Get data summaries success", $data, true);
+        }
+
+        return $this->response_data(500, "Invalid data", [], false);
     }
 
     public function response_data($status, $message, $data, $success)
@@ -65,7 +75,9 @@ class uc010Controller extends Controllers
             "success" => $success,
         ];
 
-        return json_encode($arr);
+        header('Content-Type: application/json; charset=utf-8');
+
+        echo json_encode($arr);
     }
 }
 

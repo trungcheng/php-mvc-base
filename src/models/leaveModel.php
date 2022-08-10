@@ -41,15 +41,27 @@ class leaveModel extends ConnectDB
         return mysqli_query($this->connection, $sql);
     }
 
-    public function get_data_summaries($userId, $year)
+    public function get_all_leave_types()
     {
-        $sql = "SELECT * FROM `leave_type` 
-                LEFT JOIN `leave_type_history` 
-                ON `leave_type_history`.`LEAVE_TYPEID` = `leave_type`.`LEAVETYPE_ID`
-                WHERE `leave_type_history`.`EMPLOYEE_ID` = '$userId'
-                AND YEAR(`CREATE_DATE`) = '$year'";
+        $sql = "SELECT * FROM `leave_type`";
         $result = mysqli_query($this->connection, $sql);
 
         return mysqli_fetch_all($result);
+    }
+
+    public function get_leave_type_histories($userId, $year)
+    {
+        $sql = "SELECT * FROM `leave_type_history` 
+                WHERE `EMPLOYEE_ID` = '$userId' 
+                AND YEAR(`CREATE_DATE`) = '$year' 
+                GROUP BY `LEAVE_TYPEID`";
+        $result = mysqli_query($this->connection, $sql);
+
+        $rows = [];
+        while ($row = mysqli_fetch_row($result)) {
+            $rows[$row[1]] = $row;
+        }
+
+        return $rows;
     }
 }
