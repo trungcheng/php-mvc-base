@@ -37,8 +37,8 @@
                             <option value="5">non-paid leave</option>
                             <option value="6">maternity leave (non-paid)</option>
                             <option value="7">engagement ceremony</option>
-                            <option value="8">relative funeral leave</option>
-                            <option value="9">wedding leave</option>
+                            <option value="8">wedding leave</option>
+                            <option value="9">relative funeral leave</option>
                         </select>
                     </div>
                 </div>
