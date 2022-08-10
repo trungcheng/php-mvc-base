@@ -29,8 +29,8 @@ class leaveModel extends ConnectDB
         $employee_id = $data['employee_id'];
         $leave_typeid = $data['leave_typeid'];
         $create_date = $data['create_date'];
-        $used_day = $data['used_day'] + $data['number_days'];
-        $remaining_day = $data['remaining_day'] - $data['number_days'];
+        $used_day = $data['used_day'] - $data['number_days'];
+        $remaining_day = $data['remaining_day'] + $data['number_days'];
 
         $sql = "UPDATE `leave_type_history`
                 SET `USED_DAY` = '$used_day', `REMAINING_DAY` = '$remaining_day' 
