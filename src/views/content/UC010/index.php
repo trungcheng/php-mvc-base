@@ -80,6 +80,7 @@
     <div class="content-body summary">
         <div class="js-modal-contain">
             <select name="year" id="year" onchange="onChangeYear(this);">
+                <option value="2021">by 2021</option>
                 <option value="2022">by 2022</option>
                 <option value="2023">by 2023</option>
                 <option value="2024">by 2024</option>

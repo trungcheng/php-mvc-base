@@ -53,12 +53,11 @@ class leaveModel extends ConnectDB
     {
         $sql = "SELECT * FROM `leave_type_history` 
                 WHERE `EMPLOYEE_ID` = '$userId' 
-                AND YEAR(`CREATE_DATE`) = '$year' 
-                GROUP BY `LEAVE_TYPEID`";
+                AND YEAR(`CREATE_DATE`) = '$year'";
         $result = mysqli_query($this->connection, $sql);
 
         $rows = [];
-        while ($row = mysqli_fetch_row($result)) {
+        while ($row = mysqli_fetch_array($result)) {
             $rows[$row[1]] = $row;
         }
 

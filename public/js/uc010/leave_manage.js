@@ -329,7 +329,7 @@ $('.js-delete-confirm').on('click', function () {
 });
 
 // Js for summary
-function get_data_summaries(year = '2022') {
+function get_data_summaries(year = '2021') {
     $.ajax({
         type: 'POST',
         url: api_uc010_summary,
